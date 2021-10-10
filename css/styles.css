@@ -212,8 +212,6 @@ a[href="tel:+380961111111"]:focus
 /*our-team-styling*/
 .our-team {
         background-color: var(--our-team-background-color);
-        width: 1600px;
-        height: 648px;
 }
 .our-team h2 {
         color: var(--our-team-h2-h3-color);
