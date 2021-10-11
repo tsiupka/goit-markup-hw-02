@@ -6,43 +6,19 @@ Roboto 700 normal
 Roboto 900 normal
 */
 :root {
-        /*header-section-variables*/
-        --body-background: #ffffff;
-        --logo-part-web-color: #2196f3;
-        --full-logo-color: #212121;
-        --nav-link-color: #212121;
-        --header-contacts-color: #757575;
-        /*body-section-overal-variables*/
-        --hover-focus-now-on-only-color: #2196f3; /*same-for-all-elements*/
-        --hover-color: #2196f3; /*same-for-all-elements*/
-        --focus-color: #2196f3; /*same-for-all-elements*/
-        --now-on-color: #2196f3;
-        --body-main-text-color: #757575;
-        /*hero-section-variables*/
-        --hero-section-background: #2f303a;
-        --hero-title-color: #ffffff;
-        /*main-section-variables*/
-        --our-goals-section-background-color: #e5e5e5;
-        --what-we-are-doing-h2-text-color: #212121;
-        --our-team-background-color: #f5f4fa;
-        --our-team-h2-h3-color: #212121;
-        --our-team-p-text-color: #757575;
-        --portfolio-background-color: #e5e5e5;
-        /*footer-section-variables*/
-        --full-logo-footer-color: #ffffff;
-        --footer-section-background-color: #2f303a;
-        --footer-text-color: #ffffff;
-        --footer-call-link-color: rgba(255, 255, 255, 0.6);
-        /*portfolio-section-variables*/
-        --portfolio-button-text-color: #212121;
-        --portfolio-h3-text-color: #212121;
-        --portfolio-p-text-color: #757575;
+        --color-ffffff: #ffffff;
+        --color-2196f3: #2196f3;
+        --color-212121: #212121;
+        --color-757575: #757575;
+        --color-2f303a: #2f303a;
+        --color-e5e5e5: #e5e5e5;
+        --color-f5f4fa: #f5f4fa;
+        --color-rgba-255-255-255-06: rgba(255, 255, 255, 0.6);
 }
-
 /*body-overal-styles*/
 body {
-        background-color: var(--body-background);
-        color: var(--body-main-text-color);
+        background-color: var(--color-ffffff);
+        color: var(--color-757575);
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 14px;
@@ -50,6 +26,7 @@ body {
 a {
         text-decoration: none;
 }
+
 ul {
         list-style-type: none;
 }
@@ -61,51 +38,48 @@ ul {
 
 /*logo-styles-section*/
 .logo-part-web {
-        color: var(--logo-part-web-color);
+        color: var(--color-2196f3);
 }
 .full-logo {
-        color: var(--full-logo-color);
         font-family: "Raleway", sans-serif;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        text-decoration: none;
+        letter-spacing: 0.03em;
         text-align: left;
+        color: var(--color-212121);
 }
 /*logo-styles-section*/
 
 /*section-of-navigation-styles*/
 .nav-link {
-        color: var(--nav-link-color);
-        font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--color-212121);
 }
-.nav-link:hover,
-.nav-link:focus {
-        color: var(--hover-focus-now-on-only-color);
+.nav-link:hover {
+        color: var(--color-2196f3);
 }
 
 /*section-of-navigation-styles*/
 
 /*section-of-navigation-styles*/
 .header-contacts a {
-        color: var(--header-contacts-color);
-        font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
-        text-decoration: none;
+        letter-spacing: 0.02em;
+        color: var(--color-757575);
 }
-.header-contacts a:hover,
-.header-contacts a:focus {
-        color: var(--hover-focus-now-on-only-color);
+.header-contacts a:hover {
+        color: var(--color-2196f3);
 }
 
 /*makes link and button an active on needed page */
 .now-on {
-        color: var(--hover-focus-now-on-only-color);
+        color: var(--color-2196f3);
 }
 /*makes link and button an active on needed page */
 
@@ -129,41 +103,36 @@ a[href="tel:+380961111111"]:focus
 
 /*hero-section*/
 .hero-section {
-        background-color: var(--hero-section-background);
-        width: 1600px;
-        height: 600px;
+        background-color: var(--color-2f303a);
 }
 .hero-title {
         text-align: center;
-        color: var(--hero-title-color);
-        font-family: "Roboto", sans-serif;
+        color: var(--color-ffffff);
+        text-transform: uppercase;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-decoration: none;
-}
-
-.hero-section button {
-        color: var(--hero-title-color);
-        background-color: var(--hover-focus-now-on-only-color);
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
+        letter-spacing: 0.06em;
 }
 
 .hero-button {
+        color: var(--color-ffffff);
+        background-color: var(--color-2196f3);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
         text-align: center;
+        letter-spacing: 0.06em;
 }
-.hero-button:focus,
+
 .hero-button:hover {
-        color: var(--hover-focus-now-on-only-color);
+        color: var(--color-2196f3);
+        background: var(--color-ffffff);
 }
-/*hero-section*/
 
 /*our-goals-styling*/
 /*hided-h2*/
-.our-goals h2 {
+.our-goals-section h2 {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -177,113 +146,107 @@ a[href="tel:+380961111111"]:focus
 }
 /*hided-h2*/
 
-.our-goals {
-        background-color: var(--our-goals-section-background-color);
+.our-goals-section {
+        background-color: var(--color-ffffff);
 }
-.our-goals-section p {
-        color: var(--nav-link-color);
-        font-family: "Roboto", sans-serif;
+.our-goals-section h3 {
+        font-size: 14px;
+        text-transform: uppercase;
         font-weight: 700;
-        font-size: 16px;
         line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: var(--color-212121);
 }
 
-.our-goals-section h3 {
-        color: var(--nav-link-color);
-        font-family: "Roboto", sans-serif;
+.our-goals-section p {
         font-weight: 400;
         font-size: 14px;
-        line-height: 1.71;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        color: var(--color-757575);
 }
+
 /*our-goals-styling*/
 
 /*what-we-are-doing-styling*/
 .what-we-are-doing {
-        text-align: center;
-        color: var(--what-we-are-doing-h2-text-color);
-        font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
-        text-decoration: none;
+        letter-spacing: 0.03em;
+        color: var(--color-212121);
 }
 /*what-we-are-doing-styling*/
 
 /*our-team-styling*/
 .our-team {
-        background-color: var(--our-team-background-color);
+        background-color: var(--color-f5f4fa);
 }
 .our-team h2 {
-        color: var(--our-team-h2-h3-color);
-        font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
-        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--color-212121);
 }
 
 .our-team h3 {
-        color: var(--our-team-h2-h3-color);
-        font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
-        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--color-212121);
 }
 
 .our-team p {
-        color: var(--our-team-p-text-color);
-        font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.19;
-        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--color-757575);
 }
 /*our-team-styling*/
 
 /*footer-section-styling*/
 /*logo-footer-styles*/
 .logo-part-web {
-        color: var(--logo-part-web-color);
+        color: var(--color-2196f3);
 }
 .full-logo-footer {
-        color: var(--full-logo-footer-color);
         font-family: "Raleway", sans-serif;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        text-decoration: none;
+        letter-spacing: 0.03;
         text-align: left;
+        color: var(--color-ffffff);
 }
 /*logo-footer-styles*/
 
 .footer-section {
-        background-color: var(--footer-section-background-color);
-        width: 1600px;
-        height: 252px;
+        background-color: var(--color-2f303a);
 }
 
 .direction-link {
-        color: var(--footer-text-color);
-        font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
+        letter-spacing: 0.03em;
         font-style: normal;
+        color: var(--color-ffffff);
 }
 
-.mail-link,
-.call-link {
-        color: var(--footer-call-link-color);
-        font-family: "Roboto", sans-serif;
+.footer-adress-list .mail-link,
+.footer-adress-list .call-link {
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         font-style: normal;
+        color: var(--color-rgba-255-255-255-06);
 }
-.footer-adress-list a:hover,
-.footer-adress-list a:focus {
-        color: var(--hover-focus-now-on-only-color);
+
+.footer-adress-list a:hover {
+        color: var(--color-2196f3);
 }
 /*footer-section-styling*/
 
@@ -303,38 +266,44 @@ a[href="tel:+380961111111"]:focus
 }
 /*hided-h2*/
 
-.portfolio .button:hover,
-.portrfolio .button:hover {
-        color: var(--hover-focus-now-on-only-color);
-}
-
 .portfolio .button {
-        color: var(--portfolio-button-text-color);
-        font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.62;
         font-style: normal;
+        letter-spacing: 00.03em;
+        color: var(--color-212121);
+        background-color: var(--color-f5f4fa);
 }
+.portfolio .button:hover {
+        color: var(--color-ffffff);
+        background-color: var(--color-2196f3);
+}
+
 /*makes link and button an active on needed page */
 .portfolio .now-on {
-        color: var(--hover-focus-now-on-only-color);
+        color: var(--color-2196f3);
 }
+.portfolio .all {
+        background-color: var(--color-2196f3);
+        color: var(--color-ffffff);
+}
+
 /*makes link and button an active on needed page */
 
 .portfolio h3 {
-        color: var(--portfolio-h3-text-color);
-        font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--color-212121);
 }
 
 .portfolio p {
-        color: var(--portfolio-p-text-color);
-        font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.87;
+        letter-spacing: 0.03em;
+        color: var(--color-757575);
 }
 /*portfolio-main-section-styling*/
